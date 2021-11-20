@@ -1,1 +1,31 @@
-CODECOV_TOKEN=aeff3eb6-bf8a-4e6a-b000-85c4e8bc1322
+CODECOV_TOKEN='aeff3eb6-bf8a-4e6a-b000-85c4e8bc1322'
+coverage:
+  status:
+    project:
+      default:
+        target: auto
+      demo:
+        target: auto
+        flags:
+          - demo
+      index:
+        target: auto
+        flags:
+          - index
+comment:
+  layout: "reach, diff, flags, files"
+  behavior: default
+  require_changes: false  
+  require_base: yes
+  require_head: yes       
+  branches: null
+
+flags:
+  demo:
+    paths:
+      - src/
+    carryforward: false
+  index:
+    paths:
+      - src/main.js
+    carryforward: true
