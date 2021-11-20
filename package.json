@@ -1,69 +1,68 @@
 {
-  "name": "oruga-starter",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "@oruga-ui/oruga-next": "^0.4.7",
-    "@oruga-ui/theme-bulma": "^0.1.4",
-    "bulma": "0.9.3",
-    "bulma-css-vars": "0.7.0",
-    "core-js": "^3.6.5",
-    "vue": "^3.0.0",
-    "webpack": "5.0.0"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-unit-jest": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "@vue/test-utils": "^2.0.0-0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0",
-    "sass": "^1.43.4",
-    "sass-loader": "^10.1.1",
-    "stylelint": "13.13.1",
-    "stylelint-config-prettier": "8.0.2",
-    "stylelint-config-standard": "22.0.0",
-    "stylelint-scss": "3.20.1",
-    "typescript": "~3.9.3",
-    "vue-jest": "^5.0.0-0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "oruga-starter",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "test:unit": "vue-cli-service test:unit",
+        "lint": "vue-cli-service lint",
+        "deploy": "sh deploy.sh"
     },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
+    "dependencies": {
+        "@oruga-ui/oruga-next": "^0.4.7",
+        "@oruga-ui/theme-bulma": "^0.1.4",
+        "bulma": "0.9.3",
+        "bulma-css-vars": "0.7.0",
+        "core-js": "^3.6.5",
+        "vue": "^3.0.0",
+        "webpack": "5.0.0"
     },
-    "rules": {},
-    "overrides": [
-      {
-        "files": [
-          "**/__tests__/*.{j,t}s?(x)",
-          "**/tests/unit/**/*.spec.{j,t}s?(x)"
-        ],
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-eslint": "~4.5.0",
+        "@vue/cli-plugin-unit-jest": "~4.5.0",
+        "@vue/cli-service": "~4.5.0",
+        "@vue/compiler-sfc": "^3.0.0",
+        "@vue/test-utils": "^2.0.0-0",
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.7.2",
+        "eslint-plugin-vue": "^7.0.0",
+        "sass": "^1.43.4",
+        "sass-loader": "^10.1.1",
+        "stylelint": "13.13.1",
+        "stylelint-config-prettier": "8.0.2",
+        "stylelint-config-standard": "22.0.0",
+        "stylelint-scss": "3.20.1",
+        "typescript": "~3.9.3",
+        "vue-jest": "^5.0.0-0"
+    },
+    "eslintConfig": {
+        "root": true,
         "env": {
-          "jest": true
-        }
-      }
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/vue3-essential",
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "parser": "babel-eslint"
+        },
+        "rules": {},
+        "overrides": [{
+            "files": [
+                "**/__tests__/*.{j,t}s?(x)",
+                "**/tests/unit/**/*.spec.{j,t}s?(x)"
+            ],
+            "env": {
+                "jest": true
+            }
+        }]
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
     ]
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
 }
