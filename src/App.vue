@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+<Header/>
+<div class="container  is-fluid">
+<section class="main-content columns is-fullheight mt-3">
+<!-- <MenuBar/> -->
+
+  <div class="container is-fluid">
+   <TileBox/>
+  </div>
+</section>
+</div>
+<Footer/>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import MenuBar from './components/MenuBar.vue'
+import Footer from './components/Footer.vue'
+import Header from './components/Header.vue'
+import TileBox from './components/TileBox.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+
+    // MenuBar,
+    Footer,
+    Header,
+    TileBox
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+ @import "./scss/main.scss"; 
+ body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  min-height: 100%;
 }
 </style>

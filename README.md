@@ -1,4 +1,4 @@
-# oruga-starter
+# Vue3 + Oruga + Oruga Bulam Theme + JEST 
 
 ## Project setup
 ```
