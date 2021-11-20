@@ -18,7 +18,7 @@
 
 <p align="center">
 
-<a href="https://codecov.io/gh/akhi-ninja/oruga-vue3-starter" style="display:inline-block;float:left;"> <img src="https://codecov.io/gh/akhi-ninja/oruga-vue3-starter/branch/master/graph/badge.svg?token=N96OMOEOVI"/> </a>
+
 
    <a style="display:inline-block;float:left;" href="https://awesome.re"> <img src="https://awesome.re/badge-flat.svg"/></a>
 </p>
