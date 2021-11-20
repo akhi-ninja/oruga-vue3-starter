@@ -1,4 +1,5 @@
-CODECOV_TOKEN='aeff3eb6-bf8a-4e6a-b000-85c4e8bc1322'
+codecov:
+  token: aeff3eb6-bf8a-4e6a-b000-85c4e8bc1322
 coverage:
   status:
     project:
@@ -23,7 +24,7 @@ comment:
 flags:
   demo:
     paths:
-      - src/
+      - src/main.js
     carryforward: false
   index:
     paths:
