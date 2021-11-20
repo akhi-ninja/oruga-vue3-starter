@@ -1,10 +1,13 @@
 <template>
 <footer class="footer">
   <div class="content has-text-centered">
-    <p>
-      <strong>oruga</strong> 
-  
-    </p>
+   <a href="https://bulma.io">
+  <img
+    src="https://bulma.io/images/made-with-bulma.png"
+    alt="Made with Bulma"
+    width="128"
+    height="24">
+</a>
   </div>
 </footer>
 </template>
