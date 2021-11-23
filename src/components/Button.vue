@@ -1,29 +1,20 @@
 <template>
-   <section>
+  <section>
     <o-button class="button is-primary" @click="clickMe('sdhjsdh')">Click Me</o-button>
   </section>
 </template>
 <script>
-
-  export default {
-        name: 'Button',
-    data() {
-      return {
-        
-      }
+export default {
+  name: "Button",
+  data() {
+    return {};
+  },
+  methods: {
+    clickMe(msg) {
+      alert(msg);
     },
-    methods: {
-      clickMe(msg) {
-        alert(msg)
-      }
-    },
-    computed: {
- 
-    }
-  }
+  },
+  computed: {},
+};
 </script>
-<style lang="scss">
-
-
-
-</style>
+<style lang="scss"></style>
