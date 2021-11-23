@@ -1,29 +1,38 @@
-
-@charset "utf-8";
-
-// Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
-// Base Colors 
-$primary:hsl(171, 100%, 41%);
-// Set your brand colors
-$purple: #0071bc;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-
-// Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
-$grey-dark: $brown;
-$grey-light: $beige-light;
-// $primary: $purple;
-$link: $pink;
-$widescreen-enabled: false;
-$fullhd-enabled: false;
-
-// Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
-@import '~bulma';
+@import "~bulma/sass/utilities/_all";
+// Font family 
+$family-primary: "Segoe UI",
+"Roboto",
+"Oxygen",
+"Ubuntu",
+"Cantarell",
+"Fira Sans",
+"Droid Sans",
+"Helvetica Neue",
+"Helvetica",
+"Arial";
+// Set your colors
+$primary: #6a0897;
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
+$primary-invert: findColorInvert($primary);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+$info: $cyan;
+$success: $green;
+$warning: $yellow;
+$danger: $red;
+$dark: $grey-darker;
+$text: $grey-dark;
+// Lists and maps
+$custom-colors: null !default;
+$custom-shades: null !default;
+// Setup $colors to use as bulma classes (e.g. 'is-twitter') (from the oruga them https://github.com/oruga-ui/theme-bulma#customization-sassscss) 
+$colors: mergeColorMaps( ( "white": ( $white, $black, ), "black": ( $black, $white, ), "light": ( $light, $light-invert, ), "dark": ( $dark, $dark-invert, ), "primary": ( $primary, $primary-invert, $primary-light, $primary-dark, ), "link": ( $link, $link-invert, $link-light, $link-dark, ), "info": ( $info, $info-invert, $info-light, $info-dark, ), "success": ( $success, $success-invert, $success-light, $success-dark, ), "warning": ( $warning, $warning-invert, $warning-light, $warning-dark, ), "danger": ( $danger, $danger-invert, $danger-light, $danger-dark, ), ), $custom-colors);
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+@import "~bulma/bulma";
+@import '~@oruga-ui/theme-bulma/dist/scss/bulma';
+@import './sidebar.scss';
+@import './layout.scss';

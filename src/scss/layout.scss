@@ -1,0 +1,14 @@
+.layout-wrapper {
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    width: calc(100% - 80px);
+    padding: 0 0 60px 0;
+    margin-left: 80px;
+    background: #f0f0f0;
+    transition: all 0.3s;
+    .is-center-layout {
+        margin-left: 320px;
+        width: calc(100% - 320px);
+    }
+}
