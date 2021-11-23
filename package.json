@@ -11,10 +11,12 @@
     "dependencies": {
         "@oruga-ui/oruga-next": "^0.4.7",
         "@oruga-ui/theme-bulma": "^0.1.4",
+        "apexcharts": "^3.30.0",
         "bulma": "0.9.3",
         "bulma-css-vars": "0.7.0",
         "core-js": "^3.6.5",
         "vue": "^3.0.0",
+        "vue3-apexcharts": "^1.4.1",
         "webpack": "5.0.0"
     },
     "devDependencies": {
@@ -49,15 +51,17 @@
             "parser": "babel-eslint"
         },
         "rules": {},
-        "overrides": [{
-            "files": [
-                "**/__tests__/*.{j,t}s?(x)",
-                "**/tests/unit/**/*.spec.{j,t}s?(x)"
-            ],
-            "env": {
-                "jest": true
+        "overrides": [
+            {
+                "files": [
+                    "**/__tests__/*.{j,t}s?(x)",
+                    "**/tests/unit/**/*.spec.{j,t}s?(x)"
+                ],
+                "env": {
+                    "jest": true
+                }
             }
-        }]
+        ]
     },
     "browserslist": [
         "> 1%",

@@ -34,3 +34,5 @@ $link-invert: $primary-invert;
 $link-focus-border: $primary;
 @import "~bulma/bulma";
 @import '~@oruga-ui/theme-bulma/dist/scss/bulma';
+@import './sidebar.scss';
+@import './layout.scss';
