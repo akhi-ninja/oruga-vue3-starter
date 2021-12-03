@@ -6,9 +6,11 @@
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "test:unit": "vue-cli-service test:unit",
-        "lint": "vue-cli-service lint"
+        "lint": "vue-cli-service lint",
+        "e2e": "cypress run"
     },
     "dependencies": {
+        "@cypress/code-coverage": "^3.9.11",
         "@oruga-ui/oruga-next": "^0.4.7",
         "@oruga-ui/theme-bulma": "^0.1.4",
         "apexcharts": "^3.30.0",
@@ -16,6 +18,7 @@
         "bulma-css-vars": "0.7.0",
         "core-js": "^3.6.5",
         "vue": "^3.0.0",
+        "vue-router": "^4.0.12",
         "vue3-apexcharts": "^1.4.1",
         "webpack": "5.0.0"
     },
@@ -27,6 +30,7 @@
         "@vue/compiler-sfc": "^3.0.0",
         "@vue/test-utils": "^2.0.0-0",
         "babel-eslint": "^10.1.0",
+        "cypress": "7.7.0",
         "eslint": "^6.7.2",
         "eslint-plugin-vue": "^7.0.0",
         "sass": "^1.43.4",

@@ -1,0 +1,7 @@
+{
+  "projectId": "vg5bru",
+  "baseUrl": "http://localhost:8080",
+  "coverageFolder": "coverage",
+  "chromeWebSecurity": true,
+  "video": true
+}

@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
+    <a class="navbar-item" href="/">
 
       <img width="42" height="68" src="https://avatars2.githubusercontent.com/u/66300512?s=200&v=4" alt="Lightweight UI components for Vue.js" />
     </a>
@@ -15,23 +15,18 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item">
-        Dashboard
-      </a>
 
-      <a class="navbar-item">
-        Analytics
-      </a>
-
+<router-link class="navbar-item" to="/">Home</router-link> |
+      <router-link class="navbar-item" to="/about">About</router-link>
   
     </div>
 
-    <div class="navbar-end">
+    <div class="navbar-end header-nav">
       <div class="navbar-item">
         <div class="buttons">
          
-          <o-button class="button is-primary" >Sign up</o-button>
-           <o-button class="button  is-light" >Log in</o-button>
+          <o-button @click="clickMe('signup')" class="button is-primary" >Sign up</o-button>
+           <o-button  @click="clickMe('login')" class="button  is-light" >Log in</o-button>
         
         </div>
       </div>
@@ -49,8 +44,8 @@
       }
     },
     methods: {
-      clickMe() {
-        alert('Clicked!')
+      clickMe(msg) {
+        alert(msg, 'Clicked!')
       }
     },
     computed: {
