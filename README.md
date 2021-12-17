@@ -44,6 +44,10 @@ yarn build
 ```
 yarn lint
 ```
+[![Stargazers repo roster for @akhi-ninja/oruga-vue3-starter](https://reporoster.com/stars/akhi-ninja/oruga-vue3-starter)](https://github.com/akhi-ninja/oruga-vue3-starter/stargazers)
+
+
+[![Forkers repo roster for @akhi-ninja/oruga-vue3-starter](https://reporoster.com/forks/akhi-ninja/oruga-vue3-starter)](https://github.com/akhi-ninja/oruga-vue3-starter/network/members)
 
 #### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
