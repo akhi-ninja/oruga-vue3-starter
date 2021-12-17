@@ -14,8 +14,9 @@
     line-height: 20px;
     padding: 6px 15px;" target="_blank">JEST</a>
        </i>
-</p>
 
+</p>
+ <a href='https://coveralls.io/github/akhi-ninja/oruga-vue3-starter?branch=master'><img src='https://coveralls.io/repos/github/akhi-ninja/oruga-vue3-starter/badge.svg?branch=master' alt='Coverage Status' /></a>
 <p align="center">
 
 
