@@ -1,6 +1,6 @@
 {
     "name": "oruga-starter",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
@@ -9,12 +9,12 @@
         "lint": "vue-cli-service lint"
     },
     "dependencies": {
-        "@oruga-ui/oruga-next": "^0.4.7",
-        "@oruga-ui/theme-bulma": "^0.1.4",
-        "bulma": "0.9.3",
-        "bulma-css-vars": "0.7.0",
+        "@oruga-ui/oruga-next": "^0.5.10",
+        "@oruga-ui/theme-bulma": "^0.2.8",
+        "bulma": "0.9.4",
+        "bulma-css-vars": "0.8.0",
         "core-js": "^3.6.5",
-        "vue": "^3.0.0",
+        "vue": "^3.2.45",
         "webpack": "5.0.0"
     },
     "devDependencies": {
