@@ -15,7 +15,7 @@
         "bulma-css-vars": "0.8.0",
         "core-js": "^3.6.5",
         "vue": "^3.2.45",
-        "webpack": "5.0.0"
+        "webpack": "5.76.0"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "~4.5.0",
